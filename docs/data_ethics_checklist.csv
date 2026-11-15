@@ -1,0 +1,10 @@
+no,butir,status,bukti
+1,"Sumber data legal, publik, dan relevan dengan sektor pariwisata",Ya,"Overpass API publik tanpa login; README butir 1"
+2,"robots.txt atau ketentuan API diperiksa, hasilnya dicatat",Ya,"Output sel 2 notebook; provenance.json (robots_check); README butir 4 (catatan keputusan bila can_fetch=False)"
+3,"Lisensi dicantumkan",Ya,"ODbL 1.0; README butir 4; provenance.json (license)"
+4,"Atribusi dicantumkan",Ya,"'(c) OpenStreetMap contributors' di README dan provenance.json"
+5,"User-Agent jujur (nama, NIM, email)",Ya,"Variabel USER_AGENT di sel konfigurasi notebook"
+6,"Timeout, jeda minimal 1 detik, dan batas percobaan",Ya,"TIMEOUT=90; DELAY=1.0; MAX_RETRY=4 dengan backoff dan Retry-After"
+7,"Tidak mengambil data pribadi (telepon, email, operator, akun sosial)",Ya,"COLUMNS di notebook hanya memuat kolom non-pribadi; README butir 4-5"
+8,"Tidak ada API key atau kredensial di notebook/repository",Ya,"Sumber tanpa API key; .gitignore memuat .env, *.key, credentials.json"
+9,"Asal-usul terdokumentasi dan data mentah tidak diubah",Ya,"docs/provenance.json (MD5); notebook menolak menimpa berkas di data/raw/"

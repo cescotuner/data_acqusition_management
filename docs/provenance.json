@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "file_name": "osm_overpass_20261116.csv",
+      "size_bytes": 69206,
+      "md5": "75e764c65ece88385b81ae70476fd932",
+      "record_count": 905,
+      "source": "OpenStreetMap (Overpass API)",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://overpass-api.de/api/interpreter",
+      "license": "ODbL 1.0 - (c) OpenStreetMap contributors",
+      "acquired_at": "2026-11-16T02:02:01+08:00",
+      "osm_data_timestamp": "2026-11-15T18:01:19Z",
+      "acquired_by": {
+        "name": "Francesco Nera Alfi Nanggor",
+        "nim": "2501010174"
+      },
+      "method": "API (HTTP POST)",
+      "region": {
+        "name": "Gianyar",
+        "osm_relation_id": 14613952
+      },
+      "query": "[out:json][timeout:60];\narea(id:3614613952)->.a;\nnwr[\"tourism\"~\"^(hotel|guest_house|hostel|motel|apartment|resort|chalet)$\"](area.a);\nout center tags;",
+      "request_delay_seconds": 1.0,
+      "user_agent": "INSTIKI-BIFP243-Tugas1/1.0 (Francesco Nera Alfi Nanggor; NIM 2501010174; alfinanggor@gmail.com)",
+      "robots_check": {
+        "url": "https://overpass-api.de/robots.txt",
+        "checked_at": "2026-11-16T02:00:28+08:00",
+        "http_status": 200,
+        "can_fetch": false,
+        "content": "User-agent: *\nDisallow: /api/\nDisallow: /munin/\nDisallow: /achavi/\nSitemap: https://z.overpass-api.de/api/sitemap\n",
+        "note": "robots.txt ditemukan dan diperiksa",
+        "keputusan": "RobotFileParser mengembalikan can_fetch=False untuk User-Agent ini (isi robots.txt tersimpan di atas). Akses tetap dilakukan karena Overpass API adalah API publik resmi yang direkomendasikan pada brief tugas dan diatur oleh ketentuan penggunaannya sendiri (satu query, cek /api/status, jeda, User-Agent jujur). Keputusan ini dicatat terbuka di README butir 4."
+      }
+    }
+  ]
+}
